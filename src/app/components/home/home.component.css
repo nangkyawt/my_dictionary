@@ -41,51 +41,53 @@
   }
   
 
-.search-box {
+  .search-box {
     display: flex;
     align-items: center;
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 320px;  /* Reduced width */
+    margin: 15px auto;
     background: white;
-    border-radius: 30px;
-    padding: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .search-box input {
+    border-radius: 25px;
+    padding: 3px;  /* Smaller padding */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);  /* Softer shadow */
+    border: 1px solid #ddd;  /* Light border for a professional look */
+}
+
+.search-box input {
     flex: 1;
     border: none;
-    border-radius: 30px;
-    padding: 10px 15px;
-    font-size: 1rem;
+    border-radius: 25px;
+    padding: 8px 12px;  /* Smaller padding */
+    font-size: 0.9rem;  /* Reduced font size */
     outline: none;
-  }
-  
-  .search-box .search-btn {
+    font-family: "Poppins", sans-serif;
+}
+
+.search-box .search-btn {
     border: none;
     background: linear-gradient(135deg, #ff7eb3, #ff758c);
     color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 8px 15px;  /* Adjusted padding */
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .search-box .search-btn i {
-    font-size: 1.2rem;
-  }
-  
-  .search-box .search-btn:hover {
+}
+
+.search-box .search-btn i {
+    font-size: 1rem;  /* Slightly smaller icon */
+}
+
+.search-box .search-btn:hover {
     background: linear-gradient(135deg, #ff5582, #ff477e);
-    transform: scale(1.05);
-  }
-  
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
   @media (max-width: 768px) {
     .hero h1 {
