@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<section class="hero d-flex align-items-center" id="home">
+  <div class="container text-center text-md-left">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1 class="hero-title">
+          <span class="highlight">{{ word }}</span> - Details
+        </h1>
+
+        <div *ngIf="wordDetails">
+          <h2>{{ wordDetails.name }}</h2>
+          <p><strong>Definition:</strong> {{ wordDetails.definition }}</p>
+          <p><strong>Example:</strong> {{ wordDetails.example }}</p>
+        </div>
+        <div *ngIf="!wordDetails">
+          <p>Loading word details...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
