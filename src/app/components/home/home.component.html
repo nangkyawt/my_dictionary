@@ -30,7 +30,6 @@
     </div>
   </div>
 </section>
-
 <!-- Curved Background SVG -->
 <div class="curved-background">
   <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
@@ -48,21 +47,35 @@
 </div>
 <!-- Bootstrap Modal -->
 <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content rounded-lg shadow">
+      <!-- Modal Header -->
       <div class="modal-header">
-        <h5 class="modal-title">Search Result</h5>
+        <h5 class="modal-title">📖 Dictionary Result</h5>
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
         ></button>
       </div>
+
+      <!-- Modal Body -->
       <div class="modal-body">
-        <p>
-          You searched for: <strong>{{ searchTerm }}</strong>
+        <p class="search-text">
+          Word: <strong>{{ searchTerm }}</strong>
         </p>
+
+        <div class="definition-box">
+          <p class="definition-text">Definition will appear here...</p>
+        </div>
+
+        <div class="extra-info mt-3">
+          <p><strong>Pronunciation:</strong> /example/</p>
+          <p><strong>Synonyms:</strong> word1, word2, word3</p>
+        </div>
       </div>
+
+      <!-- Modal Footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close
@@ -72,7 +85,7 @@
           class="btn btn-primary"
           (click)="navigateToDetails()"
         >
-          View Details
+          More Details
         </button>
       </div>
     </div>
