@@ -1,5 +1,5 @@
 .greeting{
-    color: #3A7D44; 
+    color: #FBA518; 
 }
 
 .hero-title {
@@ -8,29 +8,21 @@
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     animation: fadeInUp 1s ease-in-out;
   }
   
 
   .hero-title .highlight {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: #FBA518;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-  }
-  
-  .leaf-icon {
-    margin-left: 10px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .leaf-icon:hover {
-    transform: scale(1.2);
-  }
- 
+    font-weight: 700;
+    letter-spacing: 1px;
+   }
 
-  @keyframes fadeInUp {
+  
+    @keyframes fadeInUp {
     from {
       opacity: 0;
       transform: translateY(20px);
@@ -73,7 +65,7 @@
 
 .search-box .search-btn {
     border: none;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #FBA518, #3A7D44);
     color: white;
     padding: 8px 15px; 
     border-radius: 25px;
@@ -92,7 +84,7 @@
 }
 
 .search-box .search-btn:hover {
-    background: linear-gradient(135deg, #ff5582, #ff477e);
+  background: linear-gradient(135deg, #FBA518, #3A7D44); 
     transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -121,12 +113,6 @@
     }
   }
  
-  .modal-content {
-    animation: fadeIn 0.5s ease-in-out;
-    border-radius: 12px;  
-    border: none;  
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  
-}
 
 @keyframes fadeIn {
   from {
@@ -147,13 +133,6 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* Modal Header */
-.modal-header {
-  background: linear-gradient(135deg, #ff7eb3, #ff758c); 
-  color: white;
-  padding: 12px 16px;
 }
 
 .modal-title {
@@ -191,11 +170,18 @@
 }
 
 /* Modal Footer */
+.modal-header {
+  background: linear-gradient(135deg, #FBA518, #3A7D44);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+.modal-body p {
+  font-size: 1.1rem;
+  color: #2C3E50;
+}
 .modal-footer {
-  border-top: none;
-  padding: 12px 16px;
-  display: flex;
-  justify-content: space-between;
+  background: #EDF1EE;
+  border-radius: 0 0 12px 12px;
 }
 
 /* Buttons */
@@ -213,19 +199,18 @@
 }
 
 .btn-primary {
-  background: #3A7D44;
+  background: linear-gradient(135deg, #FBA518, #3A7D44);
+  color: #ffffff;
   border: none;
-  font-weight: 600;
-  padding: 8px 14px;
-  border-radius: 6px;
+  padding: 10px 16px;
+  border-radius: 8px;
   transition: all 0.3s ease-in-out;
-  color: white;
 }
-
 .btn-primary:hover {
-  background: #2a5d35; 
+  background: linear-gradient(135deg, #FBA518, #3A7D44);
   transform: scale(1.05);
 }
+
 
 /* Close Button */
 .btn-close {
@@ -247,3 +232,4 @@
 
 .search-box input {
   padding-left: 35px; }
+
