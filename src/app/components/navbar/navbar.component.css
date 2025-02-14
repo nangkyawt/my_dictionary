@@ -1,5 +1,5 @@
 .nav-item a {
-    color: #FBA518; 
+    color: #1A1A1A; 
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
@@ -11,14 +11,14 @@
 
 .nav-item a:hover {
     color: #ffffff; 
-    background: linear-gradient(135deg, #FBA518, #3A7D44);
+    background-color: #1A1A1A;
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  
 }
 
 .nav-item a.active {
     color: #ffffff;
-    background: linear-gradient(135deg, #FBA518, #3A7D44);
+    background-color: #1A1A1A;
     border-radius: 5px;
   }
 
@@ -31,9 +31,11 @@
     border-radius: 10px;
 }
 .navbar-brand {
+    background-color: #ffffff;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #FBA518; /* Gold Logo */
+    color: #1A1A1A; 
+    box-shadow: #FBA518;
 }
 
 .navbar-brand .logo {
